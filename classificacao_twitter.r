@@ -1,3 +1,4 @@
+
 library(RMySQL)
 library(dplyr)
 library(data.table)
@@ -58,3 +59,5 @@ dbSendQuery(con, insertSQL)
 
 dbDisconnect(con)
 rm(list=ls())
+
+

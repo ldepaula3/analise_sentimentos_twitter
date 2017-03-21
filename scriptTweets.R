@@ -172,11 +172,3 @@ q2ab <- airbnb[quadrante == 'Q2']
 q3ab <- airbnb[quadrante == 'Q3']
 q4ab <- airbnb[quadrante == 'Q4']
 
-
-#WordCloud
-wordCloud <- Corpus (VectorSource(clean_tweet))
-wordCloud <- tm_map(wordCloud, stripWhitespace)
-wordCloud <- tm_map(wordCloud, tolower)
-wordCloud <- tm_map(wordCloud, removeWords, stopwords("english"))
-wordCloud <- tm_map(wordCloud, stemDocument)
-wordcloud(wordCloud, scale=c(5,0.5), max.words=100, random.order=FALSE, rot.per=0.35, use.r.layout=FALSE, colors=brewer.pal(8, "Dark2"))
