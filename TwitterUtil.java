@@ -10,8 +10,6 @@ import java.util.List;
 import models.Tweet147;
 import models.TweetAirbnb;
 
-//import org.apache.tika.language.LanguageIdentifier;
-
 import models.TweetUber;
 import models.TweetUser;
 import play.libs.F.Function0;
